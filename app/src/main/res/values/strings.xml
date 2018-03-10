@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Woolwich Tour Guide App</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">close navigation drawer</string>
+
+    <!-- Navigation Bar Titles-->
+    <string name="restaurant">Restaurants</string>
+    <string name="shop">Shops</string>
+    <string name="to_do">To Do…</string>
+    <string name="culture">Culture</string>
+
+    <!-- Restaurant String-->
+    <string name="restaurant_dialarch_title">Dial Arch</string>
+    <string name="restaurant_dialarch_info">This restaurant is situated</string>
+
+    <string name="restaurant_bluenile_title">Blue Nile</string>
+    <string name="restaurant_bluenile_info">This restaurant is situated</string>
+
+    <!-- Shop Strings-->
+    <string name="shop_tk_title">TK Maxx</string>
+    <string name="shop_tk_info">This shop is full of</string>
+
+    <string name="shop_bookworks_title">Book Works</string>
+    <string name="shop_bookworks_info">This shop is full of</string>
+
+    <!-- To Do Strings-->
+    <string name="todo_waterfront_title">Waterfront</string>
+    <string name="todo_waterfront_info">This swimming pool and gym</string>
+
+    <string name="todo_library_title">Woolwich Library</string>
+    <string name="todo_library_info">This library is full of books</string>
+
+    <!-- Culture Strings-->
+    <string name="culture_assembly_title">Assembly Statue</string>
+    <string name="culture_assembly_info">This public sculpture was created by the sculptor, Peter Burke.  It features 16 cast iron figures which each stand 188cm tall.</string>
+
+    <string name="culture_theatre_title">Old Theatre</string>
+    <string name="culture_theatre_info">This theatre used to be…</string>
+
+    <string name="culture_bear_title">The Woolwich Buddy Bear</string>
+    <string name="culture_bear_info">This public sculpture was created in celebration of
+        50 years of friendship between the Royal Borough of Greenwich and the Berlin borough
+        of Reinickendorf. Designed by the pupils of Eltham Hill School, it was created by Michele Petit-Jean.</string>
+
+</resources>
