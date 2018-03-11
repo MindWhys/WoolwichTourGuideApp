@@ -1,6 +1,7 @@
 package com.example.android.navdrawerpractice;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,9 +17,19 @@ import java.util.ArrayList;
 
 public class LocalityAdapter extends ArrayAdapter<Locality>{
 
-    public LocalityAdapter(Context context, ArrayList<Locality> local) {
+    /** Resource ID for the background color for this list of words */
+    private int backgroundColorId;
+    /** Resource ID for the background color of the Toolbar */
+    private int toolbarColorId;
+
+    public LocalityAdapter(Context context, ArrayList<Locality> local, int backgroundColorResourceId, int toolbarColorResourceId) {
         super(context, 0, local);
+        // Takes the background color resource id from the fragment and makes it a variable for this class
+        backgroundColorId = backgroundColorResourceId;
+        toolbarColorId = toolbarColorResourceId;
     }
+
+
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -34,12 +45,19 @@ public class LocalityAdapter extends ArrayAdapter<Locality>{
         // Get the location name from the currentLocation object and set this text on
         // The location_name TextView.
         nameTextView.setText(currentLocation.getLocationName());
+        // Find the color that the resource ID maps to
+        int color = ContextCompat.getColor(getContext(), toolbarColorId);
+        // Set the background color of the text container View
+        nameTextView.setBackgroundColor(color);
 
         // Find the TextView in the list_item.xml layout with the ID location_info.
         TextView infoTextView = (TextView) listItemView.findViewById(R.id.location_info);
         // Get the location name from the currentLocation object and set this text on
         // The location_info TextView.
         infoTextView.setText(currentLocation.getLocationInfo());
+        int toolbarColor = ContextCompat.getColor(getContext(), backgroundColorId);
+        // Set the background color of the text container View
+        infoTextView.setBackgroundColor(toolbarColor);
 
         // Find the ImageView in the list_item.xml layout with the ID location_photo
         ImageView photoView = (ImageView) listItemView.findViewById(R.id.location_photo);
@@ -52,6 +70,21 @@ public class LocalityAdapter extends ArrayAdapter<Locality>{
             // Otherwise hide the ImageView (set visibility to GONE)
             photoView.setVisibility(View.GONE);
         }
+
+        // Set the theme color for the list item
+        //View textContainer = listItemView.findViewById(R.id.location_name);
+        // Find the color that the resource ID maps to
+        //int color = ContextCompat.getColor(getContext(), backgroundColorId);
+        // Set the background color of the text container View
+        //textContainer.setBackgroundColor(color);
+
+        // Set the theme color for the fragment toolbar
+        //View toolbarContainer = listItemView.findViewById(R.id.location_info);
+        // Find the color that the resource ID maps to
+        //int toolbarColor = ContextCompat.getColor(getContext(), toolbarColorId);
+        // Set the background color of the text container View
+        //toolbarContainer.setBackgroundColor(toolbarColor);
+
         return listItemView;
     }
 }

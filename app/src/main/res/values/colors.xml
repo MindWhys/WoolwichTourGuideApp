@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Standard Colors -->
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- Custom Colors -->
+
+    <color name="lightBlue">#A9C7E7</color>
+    <color name="darkBlue">#19518C</color>
+
+    <color name="lightPurple">#B4B0EA</color>
+    <color name="darkPurple">#2B2396</color>
+
+    <color name="lightYellow">#FFEEB5</color>
+    <color name="darkYellow">#D8AB17</color>
+
+    <color name="lightOrange">#FFE1B5</color>
+    <color name="darkOrange">#D88B17</color>
+
+    <color name="darkGray">#303030</color>
 </resources>

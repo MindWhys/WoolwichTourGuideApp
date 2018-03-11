@@ -30,7 +30,7 @@ public class ShopFragment extends Fragment {
         local.add(new Locality(R.string.shop_bookworks_title, R.string.shop_bookworks_info, R.drawable.ic_two));
 
         // attach ArrayList to adapter
-        LocalityAdapter adapter = new LocalityAdapter(getActivity(), local);
+        LocalityAdapter adapter = new LocalityAdapter(getActivity(), local, R.color.lightYellow, R.color.darkYellow);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 

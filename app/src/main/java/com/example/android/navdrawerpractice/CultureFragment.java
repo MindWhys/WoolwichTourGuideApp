@@ -31,7 +31,7 @@ public class CultureFragment extends Fragment {
         local.add(new Locality(R.string.culture_bear_title, R.string.culture_bear_info, R.drawable.ic_three));
 
         // attach ArrayList to adapter
-        LocalityAdapter adapter = new LocalityAdapter(getActivity(), local);
+        LocalityAdapter adapter = new LocalityAdapter(getActivity(), local, R.color.lightOrange, R.color.darkOrange);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 

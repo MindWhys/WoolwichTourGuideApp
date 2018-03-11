@@ -12,10 +12,40 @@
 
     <!-- Restaurant String-->
     <string name="restaurant_dialarch_title">Dial Arch</string>
-    <string name="restaurant_dialarch_info">This restaurant is situated</string>
+    <string name="restaurant_dialarch_info">A comfortable Gastropub.
+        \nOpen: 10am-11pm (most days)
+        \n020 3130 0700
+        \nwww.dialarch.com</string>
+
+    <string name="restaurant_guardhouse_title">Guard House</string>
+    <string name="restaurant_guardhouse_info">Woolwich\'s village pub.
+        \nOpen: 10am-11pm (most days)
+        \n020 3437 0900
+        \nwww.theguardhousewoolwich.co.uk</string>
 
     <string name="restaurant_bluenile_title">Blue Nile</string>
-    <string name="restaurant_bluenile_info">This restaurant is situated</string>
+    <string name="restaurant_bluenile_info">Eritrean - Italian fusion.
+        \nOpen: 6pm-9pm (most days)
+        \n020 8855 0369
+        \nwww.bluenilecafe.co.uk</string>
+
+    <string name="restaurant_jade_title">Boulangerie Jade</string>
+    <string name="restaurant_jade_info">French Artisan Bakers.
+        \nOpen: 7am-6pm (most days)
+        \n020 020 8316 4361
+        \nwww.boulangeriejade.com</string>
+
+    <string name="restaurant_granier_title">Granier</string>
+    <string name="restaurant_granier_info">Artisan Bakers.
+        \nOpen: 7am-5pm (most days)
+        \n020 8888 5889
+        \nwww.boulangeriejade.com</string>
+
+    <string name="restaurant_artfix_title">artFIX</string>
+    <string name="restaurant_artfix_info">Cafe and Creative Space
+        \nOpen: 9am–6pm (most days)
+        \n020 8854 0108
+        \nwww.artfix.org.uk</string>
 
     <!-- Shop Strings-->
     <string name="shop_tk_title">TK Maxx</string>

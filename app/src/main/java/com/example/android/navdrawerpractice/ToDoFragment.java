@@ -30,7 +30,7 @@ public class ToDoFragment extends Fragment {
         local.add(new Locality(R.string.todo_library_title, R.string.todo_library_info, R.drawable.ic_two));
 
         // attach ArrayList to adapter
-        LocalityAdapter adapter = new LocalityAdapter(getActivity(), local);
+        LocalityAdapter adapter = new LocalityAdapter(getActivity(), local, R.color.lightBlue, R.color.darkBlue);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
