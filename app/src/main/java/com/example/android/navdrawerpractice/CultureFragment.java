@@ -1,6 +1,7 @@
 package com.example.android.navdrawerpractice;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,16 +20,19 @@ public class CultureFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         //Create ArrayList for locations
-        final ArrayList<Locality> local = new ArrayList<Locality>();
-        local.add(new Locality(R.string.culture_assembly_title, R.string.culture_assembly_info, R.drawable.ic_one));
-        local.add(new Locality(R.string.culture_theatre_title, R.string.culture_theatre_info, R.drawable.ic_two));
-        local.add(new Locality(R.string.culture_bear_title, R.string.culture_bear_info, R.drawable.ic_three));
+        final ArrayList<Locality> local = new ArrayList<>();
+        local.add(new Locality(R.string.culture_assembly_title, R.string.culture_assembly_info, R.drawable.assembly));
+        local.add(new Locality(R.string.culture_church_title, R.string.culture_church_info, R.drawable.church));
+        local.add(new Locality(R.string.culture_bear_title, R.string.culture_bear_info, R.drawable.bear));
+        local.add(new Locality(R.string.culture_barracks_title, R.string.culture_barracks_info, R.drawable.barracks));
+        local.add(new Locality(R.string.culture_statue_title, R.string.culture_statue_info, R.drawable.statue));
+        local.add(new Locality(R.string.culture_gatehouse_title, R.string.culture_gatehouse_info, R.drawable.gatehouse));
 
         // attach ArrayList to adapter
         LocalityAdapter adapter = new LocalityAdapter(getActivity(), local, R.color.lightOrange, R.color.darkOrange);

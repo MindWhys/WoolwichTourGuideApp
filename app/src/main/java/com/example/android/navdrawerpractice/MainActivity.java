@@ -6,21 +6,16 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
-import android.widget.ArrayAdapter;
-
-import java.lang.reflect.Array;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawer;
     private Toolbar toolBar;
-    private NavigationView nvDrawer;
 
     // Make sure to be using android.support.v7.app.ActionBarDrawerToggle version.
     // The android.support.v4.app.ActionBarDrawerToggle has been deprecated.
@@ -48,18 +43,18 @@ public class MainActivity extends AppCompatActivity {
         drawer.addDrawerListener(drawerToggle);
 
         // Find our drawer view
-        nvDrawer = findViewById(R.id.nvView);
+        NavigationView nvDrawer = findViewById(R.id.nvView);
         setupDrawerContent(nvDrawer);
     }
 
     // 'onPostCreate' called when activity start-up is complete after 'onStart()'
     // NOTE 1: Make sure to override the method with only a single 'Bundle' argument
     // NOTE 2: Make sure you implement the correct 'onPostCreate(Bundle savedInstanceState)' method.
-    // There are 2 signatures and onle 'onPostCreate(Bundle state)' shows the hamburger icon.
+    // There are 2 signatures and only 'onPostCreate(Bundle state)' shows the hamburger icon.
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        // Sync the toggle atate after onRestoreInstanceState has occurred.
+        // Sync the toggle state after onRestoreInstanceState has occurred.
         drawerToggle.syncState();
     }
 
@@ -79,10 +74,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // The action bar home/up action should open or close the drawer.
-        if (drawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        return drawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
@@ -97,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
-    public void selectDrawerItem(MenuItem menuItem) {
+    private void selectDrawerItem(MenuItem menuItem) {
         // Create a new fragment and specify the fragment to show based on nav item clicked
         Fragment fragment = null;
         Class fragmentClass;

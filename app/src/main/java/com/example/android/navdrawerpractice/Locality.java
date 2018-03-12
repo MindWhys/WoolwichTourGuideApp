@@ -5,13 +5,13 @@ package com.example.android.navdrawerpractice;
  *  It contains the name, info about and a picture of that location.
  */
 
-public class Locality {
+class Locality {
 
     /** Name of the location */
-    private int locationName;
+    private final int locationName;
 
     /** Info about the location */
-    private int locationInfo;
+    private final int locationInfo;
 
     /** Image resource ID for the photo of the location */
     private int locationPhoto = NO_IMAGE_PROVIDED;

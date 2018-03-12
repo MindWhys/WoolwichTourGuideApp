@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="192dp"
-    android:background="@color/darkPurple"
-    android:padding="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="@dimen/twofiftydp"
     android:orientation="vertical"
     android:gravity="bottom">
 
+    <ImageView
+        android:src="@drawable/cannon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/cannon_image" />
     <TextView
+        android:paddingLeft="@dimen/eightdp"
+        android:paddingStart="@dimen/eightdp"
+        android:paddingTop="@dimen/twentydp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Woolwich Arsenal"
-        android:textSize="36dp"
-        android:textColor="@android:color/white"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:text="@string/woolwich_arsenal"
+        android:textSize="@dimen/twentyeightsp"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:ignore="RtlSymmetry" />
 
-</LinearLayout>
+</RelativeLayout>

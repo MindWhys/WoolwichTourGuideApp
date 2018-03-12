@@ -1,6 +1,7 @@
 package com.example.android.navdrawerpractice;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,13 +20,13 @@ public class RestaurantFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         //Create ArrayList for locations
-        final ArrayList<Locality> local = new ArrayList<Locality>();
+        final ArrayList<Locality> local = new ArrayList<>();
         local.add(new Locality(R.string.restaurant_dialarch_title, R.string.restaurant_dialarch_info, R.drawable.dial_arch));
         local.add(new Locality(R.string.restaurant_guardhouse_title, R.string.restaurant_guardhouse_info, R.drawable.guard_house));
         local.add(new Locality(R.string.restaurant_bluenile_title, R.string.restaurant_bluenile_info, R.drawable.blue_nile));

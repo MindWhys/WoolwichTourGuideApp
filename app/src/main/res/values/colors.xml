@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Standard Colors -->
-    <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
@@ -20,4 +19,6 @@
     <color name="darkOrange">#D88B17</color>
 
     <color name="darkGray">#303030</color>
+
+
 </resources>

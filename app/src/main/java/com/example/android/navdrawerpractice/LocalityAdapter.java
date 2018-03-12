@@ -1,6 +1,7 @@
 package com.example.android.navdrawerpractice;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,12 +16,12 @@ import java.util.ArrayList;
  * Adapter for creating each individual list item
  */
 
-public class LocalityAdapter extends ArrayAdapter<Locality>{
+class LocalityAdapter extends ArrayAdapter<Locality>{
 
     /** Resource ID for the background color for this list of words */
-    private int backgroundColorId;
+    private final int backgroundColorId;
     /** Resource ID for the background color of the Toolbar */
-    private int toolbarColorId;
+    private final int toolbarColorId;
 
     public LocalityAdapter(Context context, ArrayList<Locality> local, int backgroundColorResourceId, int toolbarColorResourceId) {
         super(context, 0, local);
@@ -31,8 +32,9 @@ public class LocalityAdapter extends ArrayAdapter<Locality>{
 
 
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
@@ -41,17 +43,17 @@ public class LocalityAdapter extends ArrayAdapter<Locality>{
         Locality currentLocation = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID location_name.
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.location_name);
+        TextView nameTextView = listItemView.findViewById(R.id.location_name);
         // Get the location name from the currentLocation object and set this text on
         // The location_name TextView.
-        nameTextView.setText(currentLocation.getLocationName());
+        nameTextView.setText(currentLocation != null ? currentLocation.getLocationName() : 0);
         // Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), toolbarColorId);
         // Set the background color of the text container View
         nameTextView.setBackgroundColor(color);
 
         // Find the TextView in the list_item.xml layout with the ID location_info.
-        TextView infoTextView = (TextView) listItemView.findViewById(R.id.location_info);
+        TextView infoTextView = listItemView.findViewById(R.id.location_info);
         // Get the location name from the currentLocation object and set this text on
         // The location_info TextView.
         infoTextView.setText(currentLocation.getLocationInfo());
@@ -60,7 +62,7 @@ public class LocalityAdapter extends ArrayAdapter<Locality>{
         infoTextView.setBackgroundColor(toolbarColor);
 
         // Find the ImageView in the list_item.xml layout with the ID location_photo
-        ImageView photoView = (ImageView) listItemView.findViewById(R.id.location_photo);
+        ImageView photoView = listItemView.findViewById(R.id.location_photo);
         // Check if an image is provided for this word or not
         if(currentLocation.hasImage()){
             photoView.setImageResource(currentLocation.getImageResourceId());

@@ -3,6 +3,9 @@
 
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">close navigation drawer</string>
+    <string name="general_image">An image of the current location</string>
+    <string name="cannon_image">A green cannon from the Royal Arsenal</string>
+    <string name="woolwich_arsenal">Woolwich Arsenal</string>
 
     <!-- Navigation Bar Titles-->
     <string name="restaurant">Restaurants</string>
@@ -49,28 +52,113 @@
 
     <!-- Shop Strings-->
     <string name="shop_tk_title">TK Maxx</string>
-    <string name="shop_tk_info">This shop is full of</string>
+    <string name="shop_tk_info">Cut price brands
+        \nOpen: 9am–6:30pm (most days)
+        \n020 8331 0700
+        \nwww.tkmaxx.com</string>
 
-    <string name="shop_bookworks_title">Book Works</string>
-    <string name="shop_bookworks_info">This shop is full of</string>
+    <string name="shop_bookworks_title">The Works</string>
+    <string name="shop_bookworks_info">Books, hobbies and crafts
+        \nOpen: 8:30am–6pm (most days)
+        \n0208 854 9478
+        \nwww.theworks.co.uk</string>
+
+    <string name="shop_cex_title">CeX</string>
+    <string name="shop_cex_info">Electronics and entertainment
+        \nOpen: 9:30am–6pm (most days)
+        \n0330 123 5986
+        \nuk.webuy.com</string>
+
+    <string name="shop_tesco_title">TESCO</string>
+    <string name="shop_tesco_info">Supermarket
+        \nOpen: 6am–12am (most days)
+        \n0345 671 9559
+        \nwww.tesco.com</string>
+
+    <string name="shop_whsmith_title">WH Smith</string>
+    <string name="shop_whsmith_info">Stationers and Post Office
+        \nOpen: 8:30am–6pm (most days)
+        \n020 8854 7108
+        \nwww.whsmith.co.uk</string>
+
+    <string name="shop_bhs_title">British Heart Foundation</string>
+    <string name="shop_bhs_info">Charity Store
+        \nOpen: 9:30am–6pm (most days)
+        \n020 8316 0661
+        \nwww.bhf.org.uk</string>
 
     <!-- To Do Strings-->
     <string name="todo_waterfront_title">Waterfront</string>
-    <string name="todo_waterfront_info">This swimming pool and gym</string>
+    <string name="todo_waterfront_info">Leisure Center
+        \nOpen: 6am–10:30pm (most days)
+        \n020 8317 5010
+        \nwww.better.org.uk/leisure-center</string>
 
     <string name="todo_library_title">Woolwich Library</string>
-    <string name="todo_library_info">This library is full of books</string>
+    <string name="todo_library_info">Borrow books and computer access
+        \nOpen: 9am–5:30pm (most days)
+        \n020 8921 5750
+        \nwww.better.org.uk/library</string>
+
+    <string name="todo_hustlers_title">Hustlers</string>
+    <string name="todo_hustlers_info">Sports bar and pool hall
+        \nOpen: 11am–2am (most days)
+        \n020 8465 7785
+        \nwww.hustlerssportsbar.co.uk</string>
+
+    <string name="todo_under_one_roof_title">Under 1 Roof</string>
+    <string name="todo_under_one_roof_info">Child play center
+        \nOpen: 9am–6pm (most days)
+        \n020 3247 4417
+        \nwww.under1roofkids.com</string>
+
+    <string name="todo_reach_title">The Reach</string>
+    <string name="todo_reach_info">Indoor Climbing Center
+        \nOpen: 10am–10pm (most days)
+        \n020 8855 9598
+        \nthereach.org.uk</string>
+
+    <string name="todo_go_karting_title">TeamSport</string>
+    <string name="todo_go_karting_info">Go Karting
+        \nOpen: 9am–11pm (most days)
+        \n0844 998 0000
+        \nwww.team-sport.co.uk</string>
 
     <!-- Culture Strings-->
-    <string name="culture_assembly_title">Assembly Statue</string>
-    <string name="culture_assembly_info">This public sculpture was created by the sculptor, Peter Burke.  It features 16 cast iron figures which each stand 188cm tall.</string>
+    <string name="culture_assembly_title">The Assembly</string>
+    <string name="culture_assembly_info">16 cast iron sculptures
+        \nCreated by Peter Burke
+        \nRoyal Arsenal
+        \nN 51° 29.693 E 000° 04.234</string>
 
-    <string name="culture_theatre_title">Old Theatre</string>
-    <string name="culture_theatre_info">This theatre used to be…</string>
+    <string name="culture_church_title">Church of St George</string>
+    <string name="culture_church_info">Associated with the Royal Garrison
+        \nBombed in WWII and now a memorial
+        \nGrand Depot Road
+        \nN 51° 29.123 E 000° 03.770</string>
 
     <string name="culture_bear_title">The Woolwich Buddy Bear</string>
-    <string name="culture_bear_info">This public sculpture was created in celebration of
-        50 years of friendship between the Royal Borough of Greenwich and the Berlin borough
-        of Reinickendorf. Designed by the pupils of Eltham Hill School, it was created by Michele Petit-Jean.</string>
+    <string name="culture_bear_info">Celebrates friendship with Reinickendorf
+        \nCreated by Michele Petit-Jean
+        \nGeneral Gordon Square
+        \nN51° 29.22.1 E000° 03.316</string>
+
+    <string name="culture_barracks_title">Royal Artillery Barracks</string>
+    <string name="culture_barracks_info">Hosted London 2012 Olympics
+        \nBuilding started in 1775
+        \nRepository Road
+        \nN 51° 29.093 E 000° 03.633</string>
+
+    <string name="culture_statue_title">Statue of Deus Lunus</string>
+    <string name="culture_statue_info">A late Roman work
+        \nBrought from Egypt
+        \nRoyal Arsenal
+        \nN 51° 29.541 E 000° 04.163</string>
+
+    <string name="culture_gatehouse_title">Royal Arsenal Gatehouse</string>
+    <string name="culture_gatehouse_info">Has a bell tower, clock and cannons
+        \nSplit from arsenal by a road.
+        \nBeresford Square
+        \nN 51° 29.478 E 000° 04.173</string>
 
 </resources>

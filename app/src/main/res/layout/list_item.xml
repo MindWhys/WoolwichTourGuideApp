@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -10,32 +11,36 @@
         android:id="@+id/location_photo"
         android:layout_width="88dp"
         android:layout_height="103.5dp"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/general_image" />
 
     <LinearLayout
-        android:id="@+id/info_container"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
         <TextView
-            android:textSize="20sp"
+            android:textSize="@dimen/twentysp"
             android:textStyle="bold"
             android:id="@+id/location_name"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="@dimen/thirtyfivedp"
             android:textColor="@android:color/white"
-            android:paddingLeft="8dp"
-            android:gravity="center_vertical"/>
+            android:paddingLeft="@dimen/eightdp"
+            android:paddingStart="@dimen/eightdp"
+            android:gravity="center_vertical"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
-            android:textSize="14sp"
+            android:textSize="@dimen/fourteensp"
             android:id="@+id/location_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
-            android:paddingLeft="16dp"/>
+            android:paddingLeft="@dimen/eightdp"
+            android:paddingStart="@dimen/eightdp"
+            tools:ignore="RtlSymmetry" />
 
     </LinearLayout>
 
